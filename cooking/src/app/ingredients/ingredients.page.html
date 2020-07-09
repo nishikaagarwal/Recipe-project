@@ -1,9 +1,42 @@
 <ion-header>
   <ion-toolbar>
+
     <ion-title>ingredients</ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button text="" icon="arrow-back-outline"></ion-back-button>
+    </ion-buttons>
+
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
+  <ion-toolbar>
+    <ion-searchbar></ion-searchbar>
+  </ion-toolbar>
+
+<ion-list>
+  <ion-item button (click)="buttonClick()">
+    <ion-label>
+      Flours 
+    </ion-label>
+  </ion-item>
+
+  <ion-item button (click)="buttonClick()">
+    <ion-label>
+      Dairy
+    </ion-label>
+  </ion-item>
+
+  <ion-item button (click)="buttonClick()">
+    <ion-label>
+      Vegetabels
+    </ion-label>
+  </ion-item>
+
+</ion-list>
+
+<ion-button expand="block" fill="outline">Check my list</ion-button>
 
 </ion-content>
