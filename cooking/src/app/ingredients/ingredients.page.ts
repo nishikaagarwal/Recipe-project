@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PopoverController } from '@ionic/angular';
+import { IngredientsPopoverComponent } from '../ingredients-popover/ingredients-popover.component';
 
 @Component({
   selector: 'app-ingredients',
@@ -7,7 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IngredientsPage implements OnInit {
 
-  constructor() { }
+  constructor(public popoverController: PopoverController) { }
+
+async presentPopover(event){
+  const popover = await this.popoverController.create({
+    component: IngredientsPopoverComponent,
+    event
+  });
+  return await popover.present();
+}
 
   ngOnInit() {
   }

@@ -1,10 +1,10 @@
 <ion-header>
   <ion-toolbar>
 
-    <ion-title>ingredients</ion-title>
+    <ion-title colour="dark">ingredients</ion-title>
 
     <ion-buttons slot="start">
-      <ion-back-button text="" icon="arrow-back-outline"></ion-back-button>
+      <ion-back-button text="" icon="arrow-back-outline" colour="dark"></ion-back-button>
     </ion-buttons>
 
   </ion-toolbar>
@@ -17,19 +17,20 @@
   </ion-toolbar>
 
 <ion-list>
-  <ion-item button (click)="buttonClick()">
+
+  <ion-item button (click)="presentPopover($event)">
     <ion-label>
       Flours 
     </ion-label>
   </ion-item>
 
-  <ion-item button (click)="buttonClick()">
+  <ion-item button (click)="presentPopover($event)">
     <ion-label>
       Dairy
     </ion-label>
   </ion-item>
 
-  <ion-item button (click)="buttonClick()">
+  <ion-item button (click)="presentPopover($event)">
     <ion-label>
       Vegetabels
     </ion-label>
