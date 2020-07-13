@@ -1,43 +1,43 @@
 <ion-header>
-  <ion-toolbar>
+    <ion-toolbar>
 
-    <ion-title colour="dark">ingredients</ion-title>
+        <ion-title colour="dark">ingredients</ion-title>
 
-    <ion-buttons slot="start">
-      <ion-back-button text="" icon="arrow-back-outline" colour="dark"></ion-back-button>
-    </ion-buttons>
+        <ion-buttons slot="start">
+            <ion-back-button text="" icon="arrow-back-outline" colour="dark"></ion-back-button>
+        </ion-buttons>
 
-  </ion-toolbar>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
-  <ion-toolbar>
-    <ion-searchbar></ion-searchbar>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-searchbar></ion-searchbar>
+    </ion-toolbar>
 
-<ion-list>
+    <ion-list>
 
-  <ion-item button (click)="presentPopover($event)">
-    <ion-label>
-      Flours 
-    </ion-label>
-  </ion-item>
+        <ion-item button (click)="presentPopover($event)">
+            <ion-label>
+                Flours
+            </ion-label>
+        </ion-item>
 
-  <ion-item button (click)="presentPopover($event)">
-    <ion-label>
-      Dairy
-    </ion-label>
-  </ion-item>
+        <ion-item button (click)="presentPopover($event)">
+            <ion-label>
+                Dairy
+            </ion-label>
+        </ion-item>
 
-  <ion-item button (click)="presentPopover($event)">
-    <ion-label>
-      Vegetabels
-    </ion-label>
-  </ion-item>
+        <ion-item button (click)="presentPopover($event)">
+            <ion-label>
+                Vegetabels
+            </ion-label>
+        </ion-item>
 
-</ion-list>
+    </ion-list>
 
-<ion-button expand="block" fill="outline">Check my list</ion-button>
+    <ion-button (click)="final" expand="block" fill="outline">Check my list</ion-button>
 
 </ion-content>
