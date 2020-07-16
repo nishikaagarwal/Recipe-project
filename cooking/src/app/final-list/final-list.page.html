@@ -1,40 +1,49 @@
 <ion-header>
     <ion-toolbar>
-        <ion-title>final-list</ion-title>
+        <ion-title color="primary">Your List</ion-title>
+        <ion-buttons slot="start">
+            <ion-back-button text="" icon="arrow-back-outline"></ion-back-button>
+        </ion-buttons>
     </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
     <ion-list>
+        <ion-list-header>
+            <ion-label color="dark">Ingredients</ion-label>
+        </ion-list-header>
         <ion-item>
             <ion-label>Chocolate</ion-label>
+
             <ion-button>
-                <ion-icon slot="end" name="trash-outline"></ion-icon>
+                <ion-icon slot="icon-only" name="trash-outline"></ion-icon>
             </ion-button>
 
         </ion-item>
         <ion-item>
             <ion-label>Strawberry</ion-label>
             <ion-button>
-                <ion-icon slot="end" name="trash-outline"></ion-icon>
+                <ion-icon slot="icon-only" name="trash-outline"></ion-icon>
             </ion-button>
+
         </ion-item>
         <ion-item>
             <ion-label>Sugar</ion-label>
             <ion-button>
-                <ion-icon slot="end" name="trash-outline"></ion-icon>
+                <ion-icon slot="icon-only" name="trash-outline"></ion-icon>
             </ion-button>
         </ion-item>
         <ion-item>
             <ion-label>Milk</ion-label>
             <ion-button>
-                <ion-icon slot="end" name="trash-outline"></ion-icon>
+                <ion-icon slot="icon-only" name="trash-outline"></ion-icon>
             </ion-button>
         </ion-item>
         <ion-item>
             <ion-label>Flour</ion-label>
             <ion-button>
-                <ion-icon slot="end" name="trash-outline"></ion-icon>
+                <ion-icon slot="icon-only" name="trash-outline"></ion-icon>
             </ion-button>
         </ion-item>
     </ion-list>

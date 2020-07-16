@@ -19,6 +19,10 @@ const routes: Routes = [
     path: 'final-list',
     loadChildren: () => import('./final-list/final-list.module').then( m => m.FinalListPageModule)
   },
+  {
+    path: 'recipes',
+    loadChildren: () => import('./recipes/recipes.module').then( m => m.RecipesPageModule)
+  },
 ];
 
 @NgModule({
