@@ -20,7 +20,7 @@ async presentPopover(event){
   return await popover.present();
 }
 
-final() {
+navigate() {
   this.router.navigate(['/final-list']);
 }
   ngOnInit() {
