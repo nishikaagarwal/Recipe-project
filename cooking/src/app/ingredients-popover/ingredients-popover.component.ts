@@ -12,8 +12,4 @@ export class IngredientsPopoverComponent implements OnInit {
 
   ngOnInit() {}
 
-  close(){
-    this.popoverController.dismiss();
-  }
-
 }

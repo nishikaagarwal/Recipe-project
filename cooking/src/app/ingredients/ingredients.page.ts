@@ -15,6 +15,7 @@ export class IngredientsPage implements OnInit {
 async presentPopover(event){
   const popover = await this.popoverController.create({
     component: IngredientsPopoverComponent,
+    cssClass: 'popover-class',
     event
   });
   return await popover.present();

@@ -1,7 +1,8 @@
 {
   "name": "recipe",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {},
+    "cordova": {}
   },
   "type": "angular"
 }

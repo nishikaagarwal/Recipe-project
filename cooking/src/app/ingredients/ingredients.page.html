@@ -1,11 +1,13 @@
 <ion-header>
     <ion-toolbar>
 
-        <ion-title colour="dark">ingredients</ion-title>
+        <ion-title size="large">Ingredients</ion-title>
 
         <ion-buttons slot="start">
-            <ion-back-button text="" icon="arrow-back-outline" colour="dark"></ion-back-button>
-        </ion-buttons>
+            <ion-back-button>
+                <ion-icon name="arrow-back-outline"></ion-icon>
+            </ion-back-button>
+          </ion-buttons>
 
     </ion-toolbar>
 </ion-header>
@@ -13,31 +15,41 @@
 <ion-content>
 
     <ion-toolbar>
-        <ion-searchbar></ion-searchbar>
+        <ion-searchbar class="search-bar"></ion-searchbar>
     </ion-toolbar>
 
     <ion-list>
 
-        <ion-item button (click)="presentPopover($event)">
-            <ion-label>
-                Flours
+        <ion-item button (click)="presentPopover($event)" class="item1">
+            <img src="./assets/Condiments.png" class="flour-image">
+            <ion-label slot="end">
+                Condiments
+            </ion-label>
+        </ion-item>
+          
+        <ion-item button (click)="presentPopover($event)" class="item2">
+            <img src="./assets/Sweets.png" class="dairy-image">
+            <ion-label slot="end">
+                Sweets
             </ion-label>
         </ion-item>
 
-        <ion-item button (click)="presentPopover($event)">
-            <ion-label>
-                Dairy
-            </ion-label>
-        </ion-item>
-
-        <ion-item button (click)="presentPopover($event)">
-            <ion-label>
+        <ion-item button (click)="presentPopover($event)" class="item3">
+            <img src="./assets/Vegetables.png" class="vegetable-image">
+            <ion-label slot="end">
                 Vegetabels
             </ion-label>
         </ion-item>
 
     </ion-list>
 
+<<<<<<< Updated upstream
     <ion-button (click)="navigate()" expand="block" fill="outline">Check my list</ion-button>
+=======
+    <ion-button (click)="final" expand="block" colour="white" class="check-my-list-button">
+        <ion-icon name="list-outline" class="list-icon" slot="start"></ion-icon> 
+        Check My List
+    </ion-button>
+>>>>>>> Stashed changes
 
 </ion-content>
